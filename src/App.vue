@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    Hello World
+  <div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -8,7 +8,8 @@
 
 export default {
   name: 'App',
-  components: {
-  },
 };
 </script>
+<style>
+  @import url('./style/v1/text/font.css');
+</style>

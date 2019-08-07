@@ -8,8 +8,7 @@ Vue.config.productionTip = false;
 /* eslint-disable no-new */
 /* eslint-disable vue/order-in-components */
 new Vue({
-  el: '#app',
-  store,
   router,
+  store,
   render: h => h(App),
-});
+}).$mount('#app');

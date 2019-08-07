@@ -1,9 +1,17 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import AppRouter from './appRouter';
+import MainRouter from './mainRouter';
+import PopulationRouter from './populationRouter';
 
 Vue.use(Router);
 
-export default new Router({
-  routes: [AppRouter],
+const router = new Router({
+  linkActiveClass: 'open active',
+  scrollBehavior: () => ({
+    y: 0,
+  }),
+  mode: 'history',
+  routes: [MainRouter, PopulationRouter],
 });
+
+export default router;
